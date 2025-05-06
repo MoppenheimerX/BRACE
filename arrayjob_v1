@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#SBATCH -A naiss2024-22-1645 -p alvis
+#SBATCH -N 1 !--gpus-per-node=T4:1
+#SBATCH -C NOGPU
+#SBATCH -t 7-00:00:00
+#SBATCH --array 1-50  ##### of 144
+bash $SLURM_ARRAY_TASK_ID

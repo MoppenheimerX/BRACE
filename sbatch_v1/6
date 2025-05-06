@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#SBATCH -A naiss2024-22-1645 -p alvis
+#SBATCH -N 1
+#SBATCH -C NOGPU
+#SBATCH -t 7-00:00:00
+ml load CUDA-Python/12.1.0-gfbf-2023a-CUDA-12.1.1 PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
+source /mimer/NOBACKUP/groups/naiss2024-22-1645/Paper_KTH_LLM/myenv/bin/activate
+cd /mimer/NOBACKUP/groups/naiss2024-22-1645/Paper_KTH_LLM
+
+python train.py --alg_name PPO --policy MultiInputPolicy --learning_rate 0.001 --n_steps 30 --batch_size 256 --n_epochs 50 --env_name LLM_Env-v0 --init_action 0 --episode_len 4 --feedback_type no_shot

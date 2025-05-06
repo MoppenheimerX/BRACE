@@ -1,0 +1,16 @@
+Logging to ./LLM_train_results/PPO_LLM_Env-v0_MultiInputPolicy_lr0.001_ns30_bs256_ep10_ia0_el10_ftzero_shot_20250408-154257
+------------------------------------
+| env/                  |          |
+|    completion_counter | 0        |
+|    current_idx        | 19       |
+|    n_steps            | 30       |
+| rollout/              |          |
+|    ep_len_mean        | 1.61     |
+|    ep_rew_mean        | -0.573   |
+|    success_rate       | 0.778    |
+| time/                 |          |
+|    fps                | 0        |
+|    iterations         | 1        |
+|    time_elapsed       | 40       |
+|    total_timesteps    | 30       |
+------------------------------------

@@ -1,0 +1,2 @@
+rollout/ep_rew_mean,rollout/success_rate,rollout/ep_len_mean,time/iterations,env/current_idx,env/n_steps,env/completion_counter,time/fps,time/total_timesteps,time/time_elapsed
+-0.14874124999999996,0.9705882352941176,1.4705882352941178,1,69,100,0,0,100,177

@@ -1,0 +1,24 @@
+##
+## LLM
+openai
+tiktoken
+transformers==4.34.1
+bitsandbytes
+datasets
+accelerate==0.31.0
+peft
+trl
+sentencepiece
+setuptools==58.1.0
+helpers
+google-api-python-client
+##
+## RL
+tensorflow
+stable-baselines3[extra]
+##
+## General
+pandas
+numpy
+python-dotenv
+wandb

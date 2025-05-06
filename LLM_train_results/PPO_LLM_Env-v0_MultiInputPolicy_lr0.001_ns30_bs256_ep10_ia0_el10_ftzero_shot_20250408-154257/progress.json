@@ -1,0 +1,1 @@
+{"env/n_steps": 30, "env/completion_counter": 0, "env/current_idx": 19, "time/iterations": 1, "rollout/ep_rew_mean": -0.5728023333333333, "rollout/ep_len_mean": 1.6111111111111112, "time/fps": 0, "time/time_elapsed": 40, "time/total_timesteps": 30, "rollout/success_rate": 0.7777777777777778}

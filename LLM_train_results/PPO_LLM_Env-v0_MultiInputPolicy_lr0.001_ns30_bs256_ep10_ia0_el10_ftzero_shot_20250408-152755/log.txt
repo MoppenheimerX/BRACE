@@ -1,0 +1,94 @@
+Logging to ./LLM_train_results/PPO_LLM_Env-v0_MultiInputPolicy_lr0.001_ns30_bs256_ep10_ia0_el10_ftzero_shot_20250408-152755
+------------------------------------
+| env/                  |          |
+|    completion_counter | 0        |
+|    current_idx        | 31       |
+|    n_steps            | 30       |
+| rollout/              |          |
+|    ep_len_mean        | 1        |
+|    ep_rew_mean        | 0.298    |
+|    success_rate       | 1        |
+| time/                 |          |
+|    fps                | 0        |
+|    iterations         | 1        |
+|    time_elapsed       | 50       |
+|    total_timesteps    | 30       |
+------------------------------------
+-----------------------------------------
+| env/                    |             |
+|    completion_counter   | 0           |
+|    current_idx          | 61          |
+|    n_steps              | 60          |
+| rollout/                |             |
+|    ep_len_mean          | 1           |
+|    ep_rew_mean          | 0.309       |
+|    success_rate         | 1           |
+| time/                   |             |
+|    fps                  | 0           |
+|    iterations           | 2           |
+|    time_elapsed         | 91          |
+|    total_timesteps      | 60          |
+| train/                  |             |
+|    approx_kl            | 0.023419408 |
+|    clip_fraction        | 0.147       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.94       |
+|    explained_variance   | -3.56       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.0969     |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0576     |
+|    value_loss           | 0.105       |
+-----------------------------------------
+-----------------------------------------
+| env/                    |             |
+|    completion_counter   | 0           |
+|    current_idx          | 91          |
+|    n_steps              | 90          |
+| rollout/                |             |
+|    ep_len_mean          | 1           |
+|    ep_rew_mean          | 0.308       |
+|    success_rate         | 1           |
+| time/                   |             |
+|    fps                  | 0           |
+|    iterations           | 3           |
+|    time_elapsed         | 130         |
+|    total_timesteps      | 90          |
+| train/                  |             |
+|    approx_kl            | 0.024891526 |
+|    clip_fraction        | 0.197       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.93       |
+|    explained_variance   | -1.75       |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.119      |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0713     |
+|    value_loss           | 0.0188      |
+-----------------------------------------
+-----------------------------------------
+| env/                    |             |
+|    completion_counter   | 0           |
+|    current_idx          | 121         |
+|    n_steps              | 120         |
+| rollout/                |             |
+|    ep_len_mean          | 1           |
+|    ep_rew_mean          | 0.309       |
+|    success_rate         | 1           |
+| time/                   |             |
+|    fps                  | 0           |
+|    iterations           | 4           |
+|    time_elapsed         | 168         |
+|    total_timesteps      | 120         |
+| train/                  |             |
+|    approx_kl            | 0.022773592 |
+|    clip_fraction        | 0.153       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.91       |
+|    explained_variance   | -0.685      |
+|    learning_rate        | 0.001       |
+|    loss                 | -0.124      |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0627     |
+|    value_loss           | 0.0177      |
+-----------------------------------------
