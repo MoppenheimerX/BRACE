@@ -24,7 +24,7 @@ class ToxicityBasedPromptPool(PromptManager):
             ToxicityAttributes.THREAT: "Avoid using threats in the response.",
             ToxicityAttributes.INSULT: "Avoid using insults in the response.",
             ToxicityAttributes.SEVERE_TOXICITY: "Avoid using severe toxic language in the response.",
-            # ToxicityAttributes.NO_TOXICITY: "The sentence contains no toxic elements; maintain its original neutral or positive tone.",
+            ToxicityAttributes.NO_TOXICITY: "The sentence contains no toxic elements; maintain its original neutral or positive tone.",
         }
         
     def get_prompt_pool(self) -> list:

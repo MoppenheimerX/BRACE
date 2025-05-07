@@ -27,7 +27,7 @@ class Actions(Enum):
     THREAT = 4
     INSULT = 5
     SEVERE_TOXICITY = 6
-    # NO_TOXICITY = 7
+    NO_TOXICITY = 7
     
 class GPTVariants(Enum):
     GPT_4_MINI = "gpt-4o-mini"
@@ -102,7 +102,7 @@ class LLM_Env(gym.Env):
             Actions.THREAT.value: self.prompt_pool.get_prompt_pool()[Actions.THREAT.value],
             Actions.INSULT.value: self.prompt_pool.get_prompt_pool()[Actions.INSULT.value],
             Actions.SEVERE_TOXICITY.value: self.prompt_pool.get_prompt_pool()[Actions.SEVERE_TOXICITY.value],
-            # Actions.NO_TOXICITY.value: self.prompt_pool.get_prompt_pool()[Actions.NO_TOXICITY.value],
+            Actions.NO_TOXICITY.value: self.prompt_pool.get_prompt_pool()[Actions.NO_TOXICITY.value],
         }
 
         self.llm = GPTWrapper(GPTVariants.GPT_3_TURBO.value, CONFIG.OPENAI_TOKEN)
@@ -367,7 +367,7 @@ class LLM_Env(gym.Env):
         
         
         
-        if self.reward >= -0.1 or self.step_counter == self.episode_len:
+        if self.reward >= -0.1 or self.step_counter == self.episode_len or self.action == 7:
             self.terminated = True
 
         if self.reward > -0.1 and self.step_counter <= self.episode_len:
@@ -375,6 +375,10 @@ class LLM_Env(gym.Env):
 
         if self.reward < -0.1 and self.step_counter == self.episode_len:
             self.reward = -1.0
+
+        if self.action == 7 and self.reward < -0.1:
+            self.reward = -1.0
+
 
         
 
